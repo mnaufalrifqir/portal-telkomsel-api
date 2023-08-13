@@ -15,7 +15,7 @@ class Controller extends BaseController
 
     public function getImage($filename)
     {
-        $path = storage_path('') . $filename;
+        $path = 'images/' . $filename;
     
         if (file_exists($path)) {
             return response()->file($path);
@@ -28,7 +28,7 @@ class Controller extends BaseController
 
     public function getFile($filename)
     {
-        $path = storage_path('') . $filename;
+        $path = 'forms/' . $filename;
     
         if (file_exists($path)) {
             return response()->file($path);
