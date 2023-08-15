@@ -43,7 +43,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('portals/{id}', 'PortalController@GetPortalById');
     $router->put('portals/{id}', 'PortalController@UpdatePortalById');
     $router->delete('portals/{id}', 'PortalController@DeletePortalById');
-    $router->get('dashboard/{id}', 'PortalController@GetPortalByUserID');
+    $router->get('dashboard/{userID}', 'PortalController@GetPortalByUserID');
     $router->get('portals/category/{id}', 'PortalController@GetPortalByCategoryID');
 
     // CRUD User
